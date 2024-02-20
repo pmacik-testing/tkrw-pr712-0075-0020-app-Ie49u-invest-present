@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-lmwb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0020-tenant/tkrw-pr712-0075-0020-app/devfile-sample-lmwb@sha256:ab07340c7196cc3af155ec075465e6b421da6141f64e293255135b5356fe6777
+        name: my-nodejs
+        resources: {}
+status: {}
